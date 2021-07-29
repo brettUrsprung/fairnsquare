@@ -8,6 +8,7 @@ header {
   position: fixed;
   z-index: 999;
   width: 100%;
+  top:0;
 }
 
 .nav-toggle {
@@ -143,7 +144,7 @@ nav a:hover {
     height: 5px;
     background: black;
     position: absolute;
-    top: -0.75em;
+    top: -0.25em;
     left: 0;
     right: 0;
     transform: scale(0, 1);
@@ -153,4 +154,19 @@ nav a:hover {
   nav a:hover::before {
     transform: scale(1, 1);
   }
+
+/* below needs fixing the dropdown menu in the nav bar for locations */
+
+  .dropdown:hover .dropdown-content {
+     position: absolute;
+     display: block;
+     
+  }
+
+  .dropdown-content {
+      display: none;
+  }
+  
+
+  
 }
